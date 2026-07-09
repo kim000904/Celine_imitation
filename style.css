@@ -26,5 +26,8 @@ header {
     display: flex; justify-content: end;
     width: 535px;
     gap: 36px;    
-    /* 크기를 강제로 늘렸더니 갭이 안먹혀요....  */
+}
+main {
+    height: 10525px; 
+    background-color: bisque;
 }
