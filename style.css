@@ -16,6 +16,20 @@ header {
     display: flex; justify-content: space-between;
     gap: 36px;
 }
+.left-item > a {
+    padding-bottom: 5px;
+    position: relative;
+}
+.left-item > a:after {
+    content: "";
+    position: absolute; 
+    bottom: 0; left: 0; width: 0%; height: 1px;
+    background-color: #000;
+    transition: width 0.3s;
+}
+.left-item > a:hover:after {
+    width: 100%;
+}
 .ceilne-logo {
     /* border: 1px solid yellow;     */
 }
@@ -26,6 +40,21 @@ header {
     display: flex; justify-content: end;
     width: 535px;
     gap: 36px;    
+}
+.right-item > a {
+    padding-bottom: 5px;
+    position: relative;
+}
+.right-item > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; width: 0%; height: 1px;
+
+    background-color: #000;
+    transition: width 0.3s;
+}
+.right-item >a:hover::after {
+    width: 100%;
 }
 main {
     height: 10525px; 
