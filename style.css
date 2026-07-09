@@ -1,5 +1,5 @@
 header {
-    border: 1px solid red; 
+    border: 1px solid red;
     height: 74px;   
 }
 .header-inner {
@@ -7,7 +7,7 @@ header {
     display: flex; justify-content: space-between;
     padding-left: 36px; padding-right: 36px;
     align-items: center;
-    /* 중앙정렬을 하고 싶은데 센터를 놔도 되지가않아요.. */
+    height: 74px; 
 }
 .left-margin {
     border: 1px solid yellow;
@@ -23,8 +23,7 @@ header {
     border: 1px solid yellow;
 }
 .ul-right-menu {
-    display: flex; justify-content: space-between;
-    align-items: flex-end;
+    display: flex; justify-content: end;
     width: 535px;
     gap: 36px;    
     /* 크기를 강제로 늘렸더니 갭이 안먹혀요....  */
