@@ -1,26 +1,26 @@
 header {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 74px;   
 }
 .header-inner {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     display: flex; justify-content: space-between;
     padding-left: 36px; padding-right: 36px;
     align-items: center;
     height: 74px; 
 }
 .left-margin {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 .ul-left-menu {
     display: flex; justify-content: space-between;
     gap: 36px;
 }
 .ceilne-logo {
-    border: 1px solid yellow;    
+    /* border: 1px solid yellow;     */
 }
 .right-menu-margin {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 .ul-right-menu {
     display: flex; justify-content: end;
