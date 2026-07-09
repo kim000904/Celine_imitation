@@ -17,18 +17,20 @@ header {
     gap: 36px;
 }
 .left-item > a {
-    padding-bottom: 5px;
-    position: relative;
+    padding-bottom: 5px;  /* 해당 코드를 작성하지않으면 표시줄이 너무 가까움 */
+    position: relative; /*.left-item > a 를 기준으로 선언*/
 }
-.left-item > a:after {
-    content: "";
+.left-item > a:after /*가상 공간 만들기*/{ 
+    content: ""; 
+    /*content: ""; -> ""안에 아무거도 들어가지않았지만 요소가 있어야만 보이기때문에
+    작성이 필수적으로 되어 있어야함*/
     position: absolute; 
-    bottom: 0; left: 0; width: 0%; height: 1px;
+    bottom: 0; left: 0; width: 0%;/*평상시는 숨겨놓기*/ height: 1px;
     background-color: #000;
-    transition: width 0.3s;
+    transition: width 0.3s; /*0.3초간 스르르 나타나도록 만드는 것*/
 }
 .left-item > a:hover:after {
-    width: 100%;
+    width: 100%; /*해당 조건 발동시 전체보여주기*/
 }
 .ceilne-logo {
     /* border: 1px solid yellow;     */
