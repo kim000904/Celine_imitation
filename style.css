@@ -16,6 +16,23 @@ header {
     display: flex; justify-content: space-between;
     gap: 36px;
 }
+.left-menu02 {
+    /* 전체 화면 서브 메뉴의 기본 스타일 */
+    position: fixed;    /*  중요: 내비게이션이나 부모가 아닌, 브라우저 화면 전체를 기준으로 배치 */
+    left: 0;            /* 화면 맨 왼쪽 끝에 붙이기 */
+    top: 74px;         /*  중요: 현재 메인 메뉴바의 높이만큼 위에서 아래로 떨어뜨려 배치 */
+    width: 100%;        /* 화면 왼쪽 끝부터 오른쪽 끝까지 100% 채우기 */
+    height: 0;          /* 평소에는 높이를 0으로 숨김. */
+    overflow: hidden;   /* 높이가 0일 때 내부 내용물이 넘쳐서 보이지 않도록 깎아내기 */
+    background-color: #ffffff; /* 메뉴바의 배경색 (원하는 색상으로 변경 가능) */
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1); /* 아래쪽에 살짝 그림자 주기 */
+  
+  transition: 0.7s ease; /*  중요: 높이가 바뀔 때 0.4초 동안 부드럽게 애니메이션이 발생 */
+}
+.left-item01:hover .left-menu02 {
+    height: 600px;
+    border-top: 1px solid #333;
+}
 .left-item > a {
     padding-bottom: 5px;  /* 해당 코드를 작성하지않으면 표시줄이 너무 가까움 */
     position: relative; /*.left-item > a 를 기준으로 선언*/
